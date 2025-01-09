@@ -13,8 +13,7 @@
   ],
   "author": "Your Name",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0"
   }
 }
