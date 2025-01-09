@@ -4,29 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomas Mac Sweeney - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu">
+        <nav class="navbar">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
         </nav>
-        <h1>Tomas Mac Sweeney</h1>
-        <img src="images/profile.jpg" alt="Tomas Mac Sweeney" style="width: 200px; border-radius: 50%;">
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Tomas, an aspiring entrepreneur, programmer, and robotics enthusiast. I love creating innovative solutions and developing projects that make a difference.</p>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <img src="images/profile.jpg" alt="Tomas Mac Sweeney" class="profile-picture">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hi, I'm Tomas, a passionate programmer and networking expert.</p>
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I love creating innovative solutions and developing projects that make a difference.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Java Search Engine</h3>
+                    <p>Developed a Java-based search engine allowing users to find terms in text files. Implemented a ranking mechanism to display the strongest matches at the top of the results.</p>
+                </div>
+                <div class="project">
+                    <h3>Robotics Project</h3>
+                    <p>Led a team to design and program a robot capable of obstacle navigation and pattern recognition. Coded robotic behaviors using C language and applied algorithms for autonomous functionality.</p>
+                </div>
+                <div class="project">
+                    <h3>Microprocessors Gaming Project</h3>
+                    <p>Created a gaming application displayed on a breadboard screen using assembly language and microprocessor logic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Proficient in Java, Python, C; familiarity with Assembly language.</li>
+                <li><strong>Networking:</strong> Routing, switching, LAN protocols; Cisco-certified.</li>
+                <li><strong>DevOps Tools:</strong> Docker, Kubernetes, Jenkins.</li>
+                <li><strong>Web Development:</strong> Competent in HTML, CSS; basic web deployment knowledge.</li>
+                <li><strong>Operating Systems:</strong> Linux, Windows, MacOS.</li>
+                <li><strong>Databases:</strong> SQL (querying and optimization).</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <h3>BSc (Hons) in Computer Science</h3>
+            <p><strong>Technological University Dublin</strong> (2021 – 2025, Expected Graduation)</p>
+            <p>Modules: Object-Oriented Programming, Algorithms and Data Structures, Cloud Computing, Networking, Operating Systems, Software Engineering, Databases, Program Design.</p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Clerical Officer Public Sector Internship (7 Months)</h3>
+                <p>Supported public sector IT operations, contributing to system improvements and administrative workflows. Collaborated with team members to improve organizational efficiency.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Tramex Moisture Meters</h3>
+                <p>Gained experience in quality control, app development, and accounting practices. Worked cross-functionally to ensure product quality and meet customer standards.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Compudoc</h3>
+                <p>Conducted computer assembly, hardware diagnostics, and repairs. Developed foundational knowledge of smartphone hardware and software.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Tomas Mac Sweeney. All rights reserved.</p>
+        <p>&copy; 2025 Tomas Mac Sweeney. All rights reserved.</p>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 </html>
