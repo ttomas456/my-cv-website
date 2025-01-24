@@ -1,12 +1,16 @@
 /* General Styles */
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9; /* Light background */
+    background: #f9f9f9;
     color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Header Navigation */
 header {
     background-color: #333;
     color: white;
@@ -31,29 +35,40 @@ header .menu li a {
     font-size: 18px;
 }
 
+/* Main Content - Ensures footer stays at bottom */
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px; /* Ensures no overlap */
+}
+
 /* Contact Section */
 #contact {
     padding: 40px;
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 700px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 #contact h1 {
     font-size: 32px;
     color: #004d40;
+    margin-bottom: 10px;
 }
 
 #contact p {
     font-size: 18px;
-    margin-bottom: 20px;
     color: #666;
 }
 
-/* Contact Info */
+/* Contact Information */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -69,15 +84,15 @@ header .menu li a {
     font-size: 18px;
     color: #004d40;
     background: #e0f2f1;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-info .info-item span {
-    font-size: 24px;
+    font-size: 22px;
     margin-right: 10px;
     color: #26a69a;
 }
@@ -100,7 +115,7 @@ header .menu li a {
 
 /* Social Media Links */
 .social-links {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .social-links h2 {
@@ -116,9 +131,9 @@ header .menu li a {
     text-decoration: none;
     font-size: 18px;
     margin: 10px auto;
-    width: 200px;
+    width: 220px;
     background: #e0f2f1;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     color: #004d40;
     font-weight: bold;
@@ -127,13 +142,45 @@ header .menu li a {
 }
 
 .social-links a:hover {
-    background: #ffc1e3; /* Pink Hover */
+    background: #00796b;
     color: white;
     transform: scale(1.05);
 }
 
 .social-links .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     margin-right: 10px;
+}
+
+/* Footer - Fixed at Bottom */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contact {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .contact-info .info-item {
+        width: 100%;
+    }
+
+    .social-links a {
+        width: 100%;
+    }
 }
